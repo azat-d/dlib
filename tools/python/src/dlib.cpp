@@ -28,6 +28,7 @@ void bind_cnn_face_detection(py::module& m);
 void bind_global_optimization(py::module& m);
 void bind_numpy_returns(py::module& m);
 void bind_image_dataset_metadata(py::module& m);
+void bind_image_pyramid(py::module& m);
 
 #ifndef DLIB_NO_GUI_SUPPORT
 void bind_gui(py::module& m);
@@ -105,6 +106,7 @@ PYBIND11_MODULE(dlib, m)
 #endif
 
     bind_image_dataset_metadata(m);
+    bind_image_pyramid(m);
 
 
 }

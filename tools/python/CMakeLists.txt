@@ -80,6 +80,7 @@ set(python_srcs
    src/cnn_face_detector.cpp
    src/global_optimization.cpp
    src/image_dataset_metadata.cpp
+   src/image_pyramid.cpp
 )
 
 # Only add the Numpy returning functions if Numpy is present
